@@ -1,6 +1,0 @@
-package ba.bitcamp.ajla.vjezbe;
-
-public interface Drawable {
-
-	void drawOnConsole();
-}

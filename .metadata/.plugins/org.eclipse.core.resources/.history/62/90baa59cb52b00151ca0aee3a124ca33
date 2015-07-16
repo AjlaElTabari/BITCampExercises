@@ -1,7 +1,0 @@
-package ba.bitcamp.ajla.vjezbe;
-
-public interface Shape {
-
-	int getCircumference();
-	int getArea();
-}

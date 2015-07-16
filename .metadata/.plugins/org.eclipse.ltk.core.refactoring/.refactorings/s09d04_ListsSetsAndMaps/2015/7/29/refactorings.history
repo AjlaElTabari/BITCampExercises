@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;vjezbe.Task5.java&apos; to &apos;Task05.java&apos;&#x0A;- Original project: &apos;s09d04_ListsSetsAndMaps&apos;&#x0A;- Original element: &apos;vjezbe.Task5.java&apos;&#x0A;- Renamed element: &apos;vjezbe.Task05.java&apos;" description="Rename compilation unit &apos;Task5.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;vjezbe{Task5.java" name="Task05.java" references="false" stamp="1437045081218" version="1.0"/>
-</session>

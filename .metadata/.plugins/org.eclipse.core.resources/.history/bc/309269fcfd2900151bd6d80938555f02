@@ -1,9 +1,0 @@
-package predavanja;
-
-public class Main {
-	
-	LinkedListDouble list = new LinkedListDouble();
-	double value = 2.5;
-	list.add(value);
-	
-}

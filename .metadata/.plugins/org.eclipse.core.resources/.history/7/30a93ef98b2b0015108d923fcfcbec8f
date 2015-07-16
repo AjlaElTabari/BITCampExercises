@@ -1,9 +1,0 @@
-package homework23;
-
-public class QueueArrayDouble {
-	private double[] array;
-	
-	QueueArrayDouble() {
-		array = new double[0];
-	}
-}

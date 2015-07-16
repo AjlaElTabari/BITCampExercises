@@ -1,6 +1,0 @@
-package predavanja;
-
-public class Trip {
-	private String from;
-	private String to;
-}
