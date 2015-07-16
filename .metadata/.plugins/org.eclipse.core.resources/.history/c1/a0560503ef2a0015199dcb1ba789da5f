@@ -1,0 +1,14 @@
+package vjezbe;
+
+public class Planet implements Comparable<Planet> {
+	private String name;
+	private double diameter;
+	private double mass;
+	private double distanceFromTheStar;
+	
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

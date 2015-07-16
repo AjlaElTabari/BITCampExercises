@@ -1,0 +1,33 @@
+package predavanja;
+
+import java.util.Scanner;
+
+public class NumbersMain {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		Node head = null;
+		Node last = null;
+		
+		while(true) {
+			int n = input.nextInt();
+			if(n > 0) {
+				Node newNode = new Node(n);
+				
+				if(head == null && last == null) {
+					head = newNode;
+					last = newNode;
+				} else {
+					last.setNext(newNode);
+					last = newNode;
+				}
+			} else {
+				break;
+			}
+		}
+
+		input.close();
+	}
+
+}

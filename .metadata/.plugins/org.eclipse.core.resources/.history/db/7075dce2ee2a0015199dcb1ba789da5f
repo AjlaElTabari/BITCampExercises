@@ -1,0 +1,8 @@
+package vjezbe;
+
+public class Planet {
+	private String name;
+	private double diameter;
+	private double mass;
+	private double distanceFromTheStar;
+}

@@ -1,0 +1,19 @@
+package vjezbe;
+
+public class ArrayListSong {
+	Song[] listOfSongs;
+	
+	public ArrayListSong() {
+		this.listOfSongs = new Song[0];
+	}
+	
+	public String toString() {
+		String result = "";
+		
+		for (int i = 0; i < listOfSongs.length; i++) {
+			result += listOfSongs[i] + "\n";
+		}
+		
+		return result;
+	}
+}

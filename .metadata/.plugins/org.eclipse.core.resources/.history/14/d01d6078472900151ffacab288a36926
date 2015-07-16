@@ -1,0 +1,56 @@
+package predavanja;
+
+import java.util.Scanner;
+
+public class TripMain {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+//		Place head = null;
+//		Place last = null;
+//		
+//		System.out.println("Please enter place");
+//		
+//		while(true) {
+//			String str = input.nextLine();
+//			if(!str.equals("")) {
+//				Place newPlace = new Place(str);
+//				
+//				if(head == null && last == null) {
+//					head = newPlace;
+//					last = newPlace;
+//				} else {
+//					last.setNext(newPlace);
+//					last = newPlace;
+//				}
+//			} else {
+//				break;
+//			}
+//		}
+//		
+//		Place placeToVisit = head;
+//		
+//		while (placeToVisit != null) {
+//			System.out.println(placeToVisit.getName());
+//			placeToVisit = placeToVisit.getNext();
+//		}
+				
+		Place start = new Place("Sarajevo");
+		
+		Trip t = new Trip(start);
+		
+		t.addPlace(new Place("Konjic"));
+		t.addPlace(new Place("Mostar"));
+		
+		while (start != null) {
+			System.out.println(start.getName());
+			start = start.getNext();
+		}
+		
+		input.close();
+
+	}
+
+}

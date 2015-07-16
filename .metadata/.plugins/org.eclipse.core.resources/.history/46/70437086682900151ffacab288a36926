@@ -1,0 +1,20 @@
+package vjezbe;
+
+public class LinkedListSong {
+	private Song start;
+	
+	/**
+	 * Empty Constructor
+	 */
+	public LinkedListSong() {
+		this.start = null;
+	}
+	
+	/**
+	 * Constructor
+	 * @param song
+	 */
+	public LinkedListSong(Song song) {
+		this.start = song;
+	}
+}

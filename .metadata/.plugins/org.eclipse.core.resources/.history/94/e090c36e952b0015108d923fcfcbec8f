@@ -1,0 +1,124 @@
+package homework23;
+
+/**
+ * Represents an implementation of queue of doubles, using linked lists.
+ * 
+ * @author ajla.eltabari
+ *
+ */
+import java.util.EmptyStackException;
+
+	public class QueueLinkedListDouble {
+		private Node head;
+
+		/**
+		 * Empty constructor.
+		 * Initialize head node to null.
+		 */
+		public QueueLinkedListDouble() {
+			head = null;
+		}
+
+		/**
+		 * Adds element at the end of the stack.
+		 * @param value
+		 * @return
+		 */
+		public Double add(Double value) {
+			if (head == null) {
+				head = new Node(value);
+			} else {
+				Node tmp = new Node(value);
+				tmp.setNext(head);
+				head = tmp;
+			}
+			return value;
+		}
+		
+		public Double peek() {
+			return head.getValue();
+		}
+		
+		public Double pop()	 {
+			if(head == null){
+				throw new EmptyStackException();
+			}
+			
+			Double tmp = head.getValue();
+			head = head.getNext();
+			return tmp;
+		}
+		
+		public String toString() {
+			if(head == null) {
+				return "Stack is empty!";
+			}else{
+				return head.toString();
+			}
+		}
+
+		private class Node {
+
+			private Double value;
+			private Node next;
+
+			public Node(Double value) {
+				this.value = value;
+				next = null;
+			}
+
+			/**
+			 * @return the value
+			 */
+			public Double getValue() {
+				return value;
+			}
+
+			/**
+			 * @param value
+			 *            the value to set
+			 */
+			public void setValue(Double value) {
+				this.value = value;
+			}
+
+			/**
+			 * @return the next
+			 */
+			public Node getNext() {
+				return next;
+			}
+
+			/**
+			 * @param next
+			 *            the next to set
+			 */
+			public void setNext(Node next) {
+				this.next = next;
+			}
+
+			public String toString() {
+				if (next == null) {
+					return value + "";
+				}
+				return value + " " + next.toString();
+			}
+		}
+
+		public static void main(String[] args) {
+
+			StackLinkedInt stack = new StackLinkedInt();
+			System.out.println(stack.empty());
+			System.out.println(stack.push(3));
+			System.out.println(stack.push(7));
+			System.out.println(stack);
+			stack.push(15);
+			System.out.println(stack);
+			System.out.println(stack.pop());
+			System.out.println(stack);
+			
+			System.out.println(stack.peek());
+
+		}
+
+	}

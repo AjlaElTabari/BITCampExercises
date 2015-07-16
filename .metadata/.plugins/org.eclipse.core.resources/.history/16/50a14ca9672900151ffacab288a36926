@@ -1,0 +1,9 @@
+package vjezbe;
+
+public class LinkedListSong {
+	private Song start;
+	
+	public LinkedListSong() {
+		this.start = null;
+	}
+}

@@ -1,0 +1,29 @@
+package vjezbe;
+
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Employee e = new Employee("Ajla", "Tabari", true, 1000, 5, 7, 1984);
+		Employee e1 = new Employee("Gordan", "Masic", true, 1000, 5, 7, 1984);
+		Employee e3 = new Employee("Kristina", "Pupovac", true, 1000, 5, 7, 1984);
+		Employee e4 = new Employee("Zaid", "Zerdo", true, 1000, 5, 7, 1984);
+		Employee e5 = new Employee("Amra", "Sabic", true, 1000, 6, 7, 1984);
+		
+		ArrayList<Employee> employees = new ArrayList();
+		employees.add(e);
+		employees.add(e1);
+		employees.add(e3);
+		employees.add(e4);
+		
+		Company c = new Company(employees);
+	
+		c.hireEmployee(e5);
+		c.fireEmployee(e3);
+		
+		System.out.println(c.isWorkingHere(e4));
+		System.out.println(employees);
+	}
+
+}

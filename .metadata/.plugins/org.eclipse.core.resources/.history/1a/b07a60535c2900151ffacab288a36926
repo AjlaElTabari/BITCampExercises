@@ -1,0 +1,9 @@
+package vjezbe;
+
+public class ArrayListSong {
+	Song[] listOfSongs;
+	
+	public ArrayListSong() {
+		this.listOfSongs = new Song[0];
+	}
+}

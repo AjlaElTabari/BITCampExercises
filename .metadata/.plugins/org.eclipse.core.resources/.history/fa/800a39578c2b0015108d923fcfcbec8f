@@ -1,0 +1,18 @@
+package homework23;
+
+/**
+ * Represents an implementation of queue logic, using arrays.
+ * @author ajla.eltabari
+ *
+ */
+public class QueueArrayDouble {
+	private double[] array;
+	
+	/**
+	 * Constructor.
+	 * Initializing an array to length of zero.
+	 */
+	QueueArrayDouble() {
+		array = new double[0];
+	}
+}

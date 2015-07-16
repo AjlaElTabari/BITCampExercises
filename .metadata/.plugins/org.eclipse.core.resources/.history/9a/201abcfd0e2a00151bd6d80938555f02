@@ -1,0 +1,17 @@
+package predavanja;
+
+public class LinkedListInts {
+	private Node start;
+	
+	public void addFront(int value) {
+		Node newNode = new Node();
+		newNode.value = value;
+		newNode.next = start;
+		start = newNode;
+	}
+	
+	class Node {
+		int value;
+		Node next;  
+	}
+}

@@ -1,0 +1,15 @@
+package predavanja;
+
+import java.util.Scanner;
+
+public class NumbersMain {
+
+	public static void main(String[] args) {
+		Scanner input = new Scaneer(System.in);
+		Node head;
+		
+		
+
+	}
+
+}

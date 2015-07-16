@@ -1,0 +1,15 @@
+package predavanja;
+
+import java.util.Collection;
+import java.util.Iterator;
+
+public class CollectionUtils {
+
+	public static void printString(Collection <String> strings) {
+		Iterator i = strings.iterator();
+		
+		while (i.hasNext()) {
+			System.out.println(strings.iterator().next());
+		}
+	}
+}

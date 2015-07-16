@@ -1,0 +1,71 @@
+package vjezbe;
+
+import java.util.Arrays;
+
+public class ArrayListSong {
+
+	Song[] listOfSongs;
+	
+	/**
+	 * Empty constructor
+	 */
+	public ArrayListSong() {
+		this.listOfSongs = new Song[0];
+	}
+	
+	/**
+	 * Constructor, receives an array of songs, and create an ArrayList of songs
+	 * @param songs
+	 */
+	public ArrayListSong(Song[] songs) {
+		
+		this.listOfSongs = new Song[songs.length];
+		
+		for (int i = 0; i < listOfSongs.length; i++) {
+			listOfSongs[i] = songs[i];
+		}
+	}
+	
+	/**
+	 * Adding song to the list of songs
+	 * @param song
+	 */
+	public void add(Song song) {
+		if (listOfSongs.length == 0) {
+			this.listOfSongs = new Song[1];
+			listOfSongs[0] = song;
+		} else {
+			int newLength = listOfSongs.length + 1;
+			Song[] newSongs = new Song[newLength];
+			for (int i = 0; i < newLength; i++) {
+				
+			}
+		}
+	}
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ArrayListSong other = (ArrayListSong) obj;
+		if (!Arrays.equals(listOfSongs, other.listOfSongs))
+			return false;
+		return true;
+	}
+	
+	public String toString() {
+		String result = "";
+		
+		for (int i = 0; i < listOfSongs.length; i++) {
+			result += listOfSongs[i] + "\n";
+		}
+		return result;
+	}
+}

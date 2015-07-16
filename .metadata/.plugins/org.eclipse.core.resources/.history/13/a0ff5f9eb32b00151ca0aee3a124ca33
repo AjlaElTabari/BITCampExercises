@@ -1,0 +1,10 @@
+package ba.BITCamp.ajla.s04d01.predavanja;
+
+public class Documentation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

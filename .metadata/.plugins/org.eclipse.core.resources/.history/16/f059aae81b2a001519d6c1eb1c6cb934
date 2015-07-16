@@ -1,0 +1,13 @@
+package vjezbe;
+
+public class StackInt {
+	private int[] array;
+	
+	public StackInt() {
+		this.array = new int[0];
+	}
+	
+	public void push() {
+		
+	}
+}

@@ -1,0 +1,30 @@
+package homework23;
+
+import java.util.Arrays;
+
+/**
+ * Represents an implementation of queue of doubles logic, using arrays.
+ * @author ajla.eltabari
+ *
+ */
+public class QueueArrayDouble {
+	private double[] array;
+	
+	/**
+	 * Constructor.
+	 * Initializing an array to length of zero.
+	 */
+	QueueArrayDouble() {
+		array = new double[0];
+	}
+	
+	/**
+	 * Implementation of add method for queues.
+	 * Adds element at the beginning of the array.
+	 */
+	public int push(int value) {
+		array = Arrays.copyOf(array, array.length + 1);
+		array[array.length - 1] = value;
+		return value;
+	}
+}

@@ -1,0 +1,18 @@
+package predavanja;
+
+public class Trip {
+	private Place from;
+	private Place to;
+	
+	/**
+	 * @param from
+	 * @param to
+	 */
+	public Trip(Place from, Place to) {
+		super();
+		this.from = from;
+		this.to = to;
+	}
+	
+	
+}

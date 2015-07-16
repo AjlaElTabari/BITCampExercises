@@ -1,0 +1,23 @@
+package predavanja;
+
+public class Place {
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Place [name=" + name + "]";
+	}
+
+	private String name;
+
+	/**
+	 * @param name
+	 */
+	public Place(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+package predavanja;
+
+public class Trip {
+	private Place from;
+	private Place to;
+	
+	/**
+	 * @param from
+	 * @param to
+	 */
+	public Trip(Place from, Place to) {
+		super();
+		this.from = from;
+		this.to = to;
+	}
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Trip [from=" + from + ", to=" + to + "]";
+	}
+}

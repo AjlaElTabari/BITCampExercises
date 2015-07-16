@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;vjezbe.Iterator&apos; to &apos;IteratorTesting&apos;&#x0A;- Original project: &apos;S09d03_GenericProgramming&apos;&#x0A;- Original element: &apos;vjezbe.Iterator&apos;&#x0A;- Renamed element: &apos;vjezbe.IteratorTesting&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Iterator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;vjezbe{Iterator.java[Iterator" matchStrategy="1" name="IteratorTesting" qualified="false" references="true" similarDeclarations="false" stamp="1436967701830" textual="false" version="1.0"/>
+</session>

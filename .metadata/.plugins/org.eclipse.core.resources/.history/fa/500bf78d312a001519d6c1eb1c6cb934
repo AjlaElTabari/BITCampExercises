@@ -1,0 +1,13 @@
+package vjezbe.zadaca;
+
+public class Main {
+
+	public static void main(String[] args) {
+		StringStack stack = new StringStack();
+		stack.peek();
+		stack.push("Ajla");
+		System.out.println(stack);
+
+	}
+
+}

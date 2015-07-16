@@ -1,0 +1,28 @@
+package task3;
+
+import task1.StringStackArrays;
+import task2.StringStackLinkedLists;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Using arrays
+		StringStackArrays stackArray = new StringStackArrays();	
+		// Using linked lists
+		StringStackLinkedLists stackLinkedLists = new StringStackLinkedLists();
+		
+		long startStackArray = System.currentTimeMillis();
+		for (int i = 0; i < 100000; i++) {
+			stackArray.push("Amra" + i);
+		}
+		System.out.println("stackArray push: " + (System.currentTimeMillis() - startStackArray));
+		
+		long startStackLinkedLists = System.currentTimeMillis();
+		for (int i = 0; i < 100000; i++) {
+			stackArray.push("Amra" + i);
+		}
+		System.out.println("startStackLinkedLists push: " + (System.currentTimeMillis() - startStackLinkedLists));
+	}
+
+}

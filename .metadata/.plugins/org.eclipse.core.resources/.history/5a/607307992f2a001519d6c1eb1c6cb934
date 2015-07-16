@@ -1,0 +1,27 @@
+package vjezbe.zadaca;
+
+/**
+ * Represents a stack of String objects
+ * Implements few standard methods for stack manipulation
+ * @author ajla.eltabari
+ *
+ */
+public class StringStack {
+	private String[] array;
+	
+	/**
+	 * Empty constructor
+	 * Initialize String array to 0
+	 */
+	public StringStack() {
+		this.array = new String[0];
+	}
+
+	/**
+	 * Checks if an array is empty
+	 * @returns true if an array is empty, and false if it is not
+	 */
+	public boolean empty() {
+		return (array.length == 0);
+	}
+}

@@ -1,0 +1,10 @@
+package vjezbe;
+
+import zaid.Employee;
+
+public class Planet implements Comparable<Employee> {
+	private String name;
+	private double diameter;
+	private double mass;
+	private double distanceFromTheStar;
+}

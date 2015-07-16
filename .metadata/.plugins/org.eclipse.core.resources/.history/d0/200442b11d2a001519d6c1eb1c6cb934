@@ -1,0 +1,11 @@
+package vjezbe;
+
+public class Main {
+
+	public static void main(String[] args) {
+		StackInt stack = new StackInt();
+		System.out.println(stack.empty());
+
+	}
+
+}

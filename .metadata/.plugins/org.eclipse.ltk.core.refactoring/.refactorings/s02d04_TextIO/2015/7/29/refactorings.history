@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TextIO.java&apos; to &apos;birthday_memo/src/birthday.memo&apos;&#x0A;- Original project: &apos;s02d04_TextIO&apos;&#x0A;- Destination element: &apos;birthday_memo/src/birthday.memo&apos;&#x0A;- Original element: &apos;predavanja.TextIO.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=birthday_memo/src&lt;birthday.memo" element1="/src&lt;predavanja{TextIO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1436981783658" units="1" version="1.0"/>
+</session>

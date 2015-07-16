@@ -1,0 +1,51 @@
+package vjezbe;
+
+public class LinkedListSong {
+	private Song start;
+	
+	/**
+	 * Empty Constructor
+	 */
+	public LinkedListSong() {
+		this.start = null;
+	}
+	
+	/**
+	 * Constructor
+	 * @param song
+	 */
+	public LinkedListSong(Song[] song) {
+		for (int i = 0; i < song.length; i++) {
+		}
+	}
+	
+	private class Node {
+		private Song song;
+		private Node next;
+		
+		public Node(Song song) {
+			this.song = song;
+		}
+		
+		public Song getValue() {
+			return song;
+		}
+		
+		public Node getNextNode() {
+			return next;
+		}
+		
+		public void setNextNode(Node next) {
+			this.next = next;
+		}
+		
+		@Override
+		public String toString() {
+			if (next == null) {
+				return song + ""; 
+			}
+			
+			return song + " " + next.toString();
+		}
+	}
+}

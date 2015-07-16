@@ -1,0 +1,11 @@
+package vjezbe;
+
+public class Song {
+	public static final int ROCK = 0;
+	public static final int METAL = 1;
+	public static final int JAZZ = 2;
+	private String title;
+	private String author;
+	private int yearPublished;
+	private int genre;
+}

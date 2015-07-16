@@ -1,0 +1,15 @@
+package predavanja;
+
+public class Place {
+	private String name;
+
+	/**
+	 * @param name
+	 */
+	public Place(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+}

@@ -1,0 +1,119 @@
+package vjezbe;
+
+import java.util.ArrayList;
+
+/**
+ * Describes a company with employees Contains only a list of employees And
+ * methods to hire and fire an employee
+ * 
+ * @author ajla.eltabari
+ *
+ */
+public class Company {
+	private ArrayList<Employee> employees;
+
+	/**
+	 * @param employees
+	 */
+	public Company(ArrayList<Employee> employees) {
+		super();
+		this.employees = employees;
+	}
+
+	/**
+	 * Hires an employee if he/she is not already hired.
+	 * 
+	 * @param employee
+	 */
+	public void hireEmployee(Employee employee) {
+		boolean isHired = false;
+		for (int i = 0; i < employees.size(); i++) {
+			if (employees.get(i).equals(employee)) {
+				isHired = true;
+				break;
+			}
+		}
+		if (isHired) {
+			System.out.println("Desired employee is already hired.");
+		} else {
+			employees.add(employee);
+		}
+	}
+
+	/**
+	 * Fires an employee if he/she already works hire.
+	 * 
+	 * @param employee
+	 */
+	public void fireEmployee(Employee employee) {
+		boolean isHired = false;
+		for (int i = 0; i < employees.size(); i++) {
+			if (employees.get(i).equals(employee)) {
+				isHired = true;
+				break;
+			}
+		}
+		if (!isHired) {
+			System.out
+					.println("Desired employee is doesn't work in our company. You cannot fire him/her");
+		} else {
+			employees.remove(employee);
+		}
+	}
+
+	/**
+	 * Checks if person is an employee in this company
+	 */
+	public boolean isWorkingHere(Employee employee) {
+		boolean isWorkingHere = false;
+		for (int i = 0; i < employees.size(); i++) {
+			if (employees.get(i).equals(employee)) {
+				isWorkingHere = true;
+				break;
+			}
+		}
+		return isWorkingHere;
+	}
+	
+	/**
+	 * Checks if person is an employee in this company
+	 */
+	public boolean hasFemaleEmployees() {
+		boolean hasFemales = false;
+		for (int i = 0; i < employees.size(); i++) {
+			if (employees.get(i).isSex()) {
+				hasFemales = true;
+				break;
+			}
+		}
+		return hasFemales;
+	}
+	
+	/**
+	 * Sorts employees by ID using selection sort
+	 */
+	public void sortEmployeesUsingSelectionSort() {
+		for (int i = 0; i < employees.size() - 1; i++) {
+			int minIndex = findSmallestElementInRange(employees, i);
+			
+			Employee temp = employees.get(i);
+			employees.set(i, employees.get(minIndex));
+			employees.set(minIndex, temp);
+		}
+	}
+	
+	/**
+	 * Finds the index of the smallest element in the
+	 * given range [startIndex, array.length).
+	 */
+	public static int findSmallestElementInRange(ArrayList<Employee> employees, int startIndex) {
+		int minIndex = startIndex;
+		for (int i = startIndex; i < employees.size(); i++) {
+			if (employees.get(i).getId() < employees.get(minIndex).getId()) {
+				minIndex = i;
+			}
+		}
+		return minIndex;
+	}
+
+}

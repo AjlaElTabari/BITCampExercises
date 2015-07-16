@@ -1,0 +1,16 @@
+package vjezbe.zadaca;
+
+public class Main {
+
+	public static void main(String[] args) {
+		StringStack stack = new StringStack();
+		stack.push("Ajla");
+		stack.push("Amra");
+		stack.push("Gordan");
+		stack.push("Zaid");
+		stack.peek();
+		System.out.println(stack);
+
+	}
+
+}
