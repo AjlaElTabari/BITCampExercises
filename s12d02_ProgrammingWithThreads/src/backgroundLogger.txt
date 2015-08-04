@@ -1,0 +1,6 @@
+[Error] dsjfhsdjk 4565436 djgdfjkgn 45456
+
+
+[Movement] dj TRUE
+[COMM.ERROR] ajla is not a valid communication indentification number!
+[Temperature] 432523 K
