@@ -1,6 +1,7 @@
-package classes;
+package obj;
 
 import java.util.ArrayList;
+import common.Constants;
 
 /**
  * Represents a deck for DiXit board game.
@@ -10,12 +11,11 @@ import java.util.ArrayList;
  *
  */
 public class Deck {
-	private static final int DECK_SIZE = 84;
 	private static int card_id = 1;
 	private ArrayList<Card> deck = new ArrayList<>();
 	
 	public Deck() {
-		for (int i = 0; i < DECK_SIZE; i++) {
+		for (int i = 0; i < Constants.DECK_SIZE; i++) {
 			Card card =  new Card(card_id);
 			deck.add(card);
 			card_id++;

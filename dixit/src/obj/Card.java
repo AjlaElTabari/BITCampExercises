@@ -1,4 +1,4 @@
-package classes;
+package obj;
 
 import java.awt.image.BufferedImage;
 
@@ -9,8 +9,10 @@ import java.awt.image.BufferedImage;
  *
  */
 public class Card {
+	// Card attributes
 	private int id;
 	private BufferedImage image;
+	private boolean used;
 
 	/**
 	 * Constructor that makes a card with id, and without any image.
@@ -20,6 +22,7 @@ public class Card {
 	public Card(int id) {
 		this.id = id;
 		this.image = null;
+		this.used = false;
 	}
 	
 	/**
@@ -37,6 +40,6 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		return "Card [id=" + id + ", image=" + image + "\n]";
+		return "Card [\nid = " + id + ", image=" + image + "used: " + "\n]";
 	}
 }
