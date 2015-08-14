@@ -80,33 +80,38 @@ public class Server {
 	}
 	
 	private static class Sender implements Runnable {
-
+		
 		@Override
 		public void run() {
-			try {
-				Message msg = messages.take();
-				Client[] clientCopy = null;
-				synchronized (clients) {
-					clientCopy = new Client[clients.size()];
-					for (int i = 0; i < clientCopy.length; i++) {
-						clientCopy[i] = clients.take();
-						clients.add(clientCopy[i]);
-					}
-				}
-				
-				for (int i = 0; i < clientCopy.length; i++) {
-					BufferedWriter writer = clientCopy[i].getWriter();
-					writer.write(msg.getMessage());
-					writer.flush();
-				}
-				
-			} catch (InterruptedException | IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			pool.execute(this);
 			
 		}
+
+//		@Override
+//		public void run() {
+//			try {
+//				Message msg = messages.take();
+//				Client[] clientCopy = null;
+//				synchronized (clients) {
+//					clientCopy = new Client[clients.size()];
+//					for (int i = 0; i < clientCopy.length; i++) {
+//						clientCopy[i] = clients.take();
+//						clients.add(clientCopy[i]);
+//					}
+//				}
+//				
+//				for (int i = 0; i < clientCopy.length; i++) {
+//					BufferedWriter writer = clientCopy[i].getWriter();
+//					writer.write(msg.getMessage());
+//					writer.flush();
+//				}
+//				
+//			} catch (InterruptedException | IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			pool.execute(this);
+//			
+//		}
 		
 	}
 

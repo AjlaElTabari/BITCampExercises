@@ -39,6 +39,7 @@ public class Client {
 		}
 
 	}
+	 
 	
 	private static BigInteger isFb(BigInteger start, BigInteger end) {
 		BigInteger res = new BigInteger("0");;

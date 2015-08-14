@@ -49,99 +49,62 @@ public class ClientGUIGogo extends JFrame {
 
 		try {
 
-			socket = new Socket("10.0.82.27", 6815);
+			socket = new Socket("10.0.82.96", 6815);
 			writer = new BufferedWriter(new OutputStreamWriter(
 			socket.getOutputStream()));
 			reader = new BufferedReader(new InputStreamReader(
 			socket.getInputStream()));
 		} catch (IOException e1) {
-
 			e1.printStackTrace();
-
 			System.exit(1);
-
 		}
 
 		send.addActionListener(new ActionListener() {
-
+			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
 				pool.submit(new Runnable() {
-
+					
 					@Override
 					public void run() {
-
 						try {
-
 							writer.write(text.getText());
-
-							// textArea.append("Gordan: " + text.getText() +
-							// "\n");
-
 							text.setText("");
-
 							writer.newLine();
-
 							writer.flush();
-
 						} catch (IOException e1) {
-
 							e1.printStackTrace();
-
 						}
-
 					}
-
 				});
-
 			}
-
 		});
 
 		setTitle("ChatRoom");
-
 		setSize(500, 300);
-
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 		setLocationRelativeTo(null);
-
 		setVisible(true);
-
 		setResizable(true);
-
 		setVisible(true);
-
+		
 		new Thread(new Runnable() {
-
+			
 			@Override
 			public void run() {
-
 				for (;;) {
-
 					try {
-
 						String line = reader.readLine();
-
 						textArea.append(line + "\n");
-
 					} catch (IOException e) {
-
 						e.printStackTrace();
-
 					}
-
 				}
-
 			}
-
 		}).start();
-
 	}
 
 	public static void main(String[] args) {
-
 		new ClientGUIGogo();
 
 	}
