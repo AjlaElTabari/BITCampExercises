@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-wrapper {
+	
+}
+
+.div-main {
+	margin: 0 auto;
+	width: 80%;
+	height: 1000px;
+	background-image: url("http://4.bp.blogspot.com/-vyQHlgPbkzs/UIUyELeiSNI/AAAAAAAAD4w/rJzdEiM0tfo/s1600/bird-full-colours-humming-bird-fantasy-hd-animal-wallpaper.jpg");
+    background-repeat: no-repeat;
+}
+
+.div-header {
+	margin: 0 auto;
+	width: 80%;
+	height: 65px;
+	background-color: black;
+}
+
+.div-title {
+	margin: 0 auto;
+	width: 80%;
+	height: 65px;
+	background-color: gray;
+}
+
+.div-logo {
+	margin: 0 auto;
+	width: 298px;
+	height: 65px;
+	background-image: url("http://www.kidinfo.com/images/Science/EndangeredAnimalsT.png");
+    background-repeat: no-repeat;
+}
+
+.p-title {
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 15px;
+	font-family: serif;
+	font-size: 36px;
+	color: #404040;
+	font-style: bold;
+}
+
+.div-table {
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 30px;
+}
+
+.td-title-style {
+	padding-bottom: 30px; 
+	width: 33%;
+	text-align: center;
+	font-style: bold;
+	font-size: 26px;
+}
+
+.td-style {
+	border-bottom: 1px solid gray;
+	height: 30px;
+}
+
+.table-style {
+	width: 100%;
+}
+
+.div-main-galery {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.div-image {
+	margin-top: 30px;
+	margin-left: 60px;
+	float: left;	
+	height: 300px;
+	width: 300px;
+}
+
+img {
+	height: 300px;
+	width: 300px;
+}
+
+

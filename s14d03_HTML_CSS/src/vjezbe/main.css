@@ -1,0 +1,66 @@
+.div-main {
+	width: auto;
+	height: 960px;
+	background-color: #E4EAED;
+}
+
+.div-main-inner {
+	width:1400px; 
+	margin:0 auto;
+}
+
+.div-header {
+	width: auto;
+	height: 278px;
+	background-image: url("http://www.eurovisiontalents.com/wp-content/uploads/2012/02/rambo_amadeus_tportal1.jpg");
+    background-repeat: repeat;
+}
+
+.td-info {
+	font-weight: bold;
+}
+
+.div-table {
+	width: 500px;
+	float: left;
+}
+
+.div-newsletter {
+	float: right;
+}
+
+.yt {
+	float: left;
+	margin: 30px 0 0 85px;
+}
+
+.div-content {
+	width: 1400px;
+	height: 600px;
+	background-image: url("http://electroriver.com/wp-content/uploads/2014/11/Blue-And-White-Background-2-Wallpaper-Background-Hd.jpg");
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.div-empty { 
+	width: 560px;
+	height: 315px;
+}
+
+.header-large {
+	font-family: serif;
+	font-size: 44px;
+	color: #2302F7;
+}
+
+.div-menu {
+	width: auto;
+	height: 100px;
+	background-color: #0B5775;
+	margin-top: 100px;
+	padding: 40px 0 0 500px;
+}
+
+.div-btnhome {
+	float: right;
+}

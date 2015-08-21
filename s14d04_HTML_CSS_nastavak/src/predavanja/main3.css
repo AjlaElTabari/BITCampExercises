@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-wrapper {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.main-nav {
+	background-color: #C5F4AA;
+}
+
+.div-main {
+}
+
+.navigation-list {
+	list-style: none;
+}
+
+.main-nav a {
+	text-decoration: none;
+}
+
+.side-bar {
+	width: 160px;
+	flex-shrink: 0;
+}
+
+.footer {
+	text-align: center;
+}
